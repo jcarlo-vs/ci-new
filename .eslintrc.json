@@ -4,20 +4,15 @@
     "es2021": true,
     "mocha": true
   },
-  "extends": "airbnb-base",
+  "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "commonjs"
   },
   "rules": {
-    "no-console": "off",
-    "import/no-extraneous-dependencies": ["error", {
-      "devDependencies": true,
-      "allow": ["dotenv"]
-    }],
-    "no-unused-expressions": "off",
-    "chai-friendly/no-unused-expressions": "error",
-    "import/no-commonjs": "off",
-    "global-require": "off"
+    "no-console": "error",
+    "no-unused-vars": "error",
+    "no-undef": "error",
+    "semi": ["error", "always"]
   }
 } 
