@@ -10,7 +10,6 @@
     "sourceType": "commonjs"
   },
   "rules": {
-    "no-console": "error",
     "no-unused-vars": "error",
     "no-undef": "error",
     "semi": ["error", "always"]

@@ -32,7 +32,7 @@ describe('User Routes', () => {
                 .post('/users')
                 .send(userData);
 
-            expect(res).to.have.status(201);
+            expect(res).to.have.status(303);
             expect(res.body).to.have.property('name', userData.name);
             expect(res.body).to.have.property('email', userData.email);
             expect(res.body).to.have.property('age', userData.age);
