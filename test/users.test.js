@@ -49,7 +49,7 @@ describe('User Routes', () => {
                 .post('/users')
                 .send(invalidUserData);
 
-            expect(res).to.have.status(1231231);
+            expect(res).to.have.status(400);
         });
     });
 
